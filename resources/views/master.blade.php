@@ -44,7 +44,7 @@
     @include('components .navbar')
 </div>
 
-<div class="lg:w-full lg:flex hidden w-auto h-screen bg lg:bg-contain bg-no-repeat">
+<div class="lg:w-full lg:flex hidden w-auto h-screen bg lg:bg-cover bg-no-repeat">
     {{--welcoming--}}
     @include('components .welcoming')
 
