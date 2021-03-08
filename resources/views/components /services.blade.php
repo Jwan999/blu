@@ -56,13 +56,13 @@
 
 {{--numbers--}}
 <div class="flex flex-wrap justify-center mt-40">
-    <div class="w-40 self-center">
+    <div class="w-48 self-center">
         <img src="staff.png" alt="">
     </div>
-    <div class="w-40 self-center mx-32">
+    <div class="w-48 self-center mx-32">
         <img src="products.png" alt="">
     </div>
-    <div class="w-40 self-center">
+    <div class="w-48 self-center">
         <img src="clients.png" alt="">
     </div>
 </div>
