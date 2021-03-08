@@ -3,8 +3,16 @@
         وكالاتنا
     </h1>
 
-    <div class="grid lg:grid-cols-3 grid-cols-1 gap-16 mt-10">
-        test
+    <div class="grid lg:grid-cols-3 grid-cols-1 justify-items-center mt-10">
+        <div class="opacity-75 w-4/12">
+            <img src="sanmarco.png" alt="">
+        </div>
+        <div class="opacity-75 w-4/12">
+            <img src="ritver.png" alt="">
+        </div>
+        <div class="opacity-75 w-4/12">
+            <img src="pentrilo%20copy.png" alt="">
+        </div>
     </div>
 
 </div>

@@ -59,8 +59,9 @@
 <div class="lg:p-16 p-6">
     @include('components .whoarewe')
     @include('components .products')
-    @include('components .services')
     @include('components .agencies')
+    @include('components .services')
+
     @include('components .reviews')
     @include('components .contact')
 

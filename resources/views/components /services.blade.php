@@ -53,9 +53,16 @@
     </div>
 
 </div>
-{{--numbers--}}
-<div class="grid lg:grid-cols-3 grid-cols-1 mt-24">
-    <div>
 
+{{--numbers--}}
+<div class="flex flex-wrap justify-center mt-40">
+    <div class="w-40 self-center">
+        <img src="staff.png" alt="">
+    </div>
+    <div class="w-40 self-center mx-32">
+        <img src="products.png" alt="">
+    </div>
+    <div class="w-40 self-center">
+        <img src="clients.png" alt="">
     </div>
 </div>
