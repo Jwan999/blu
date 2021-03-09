@@ -4,7 +4,7 @@
     </h1>
 
     <div class="flex w-full justify-center mt-20">
-        <carousel class="w-8/12 px-24" dir="ltr" :per-page="1"
+        <carousel class="lg:w-8/12 w-full lg:px-24 px-0" dir="ltr" :per-page="1"
                   :autoplay=true>
             <slide>
                 <p class="text-xl text-gray-700 text-right leading-relaxed">

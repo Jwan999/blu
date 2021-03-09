@@ -6,8 +6,8 @@
     <div class="grid grid-cols-1 gap-16 mt-10">
         {{--services--}}
         <div class="flex flex-wrap justify-center">
-            <img class="lg:w-4/12 w-full" src="arch.png" alt="">
-            <div class="darkgray rounded shadow-2xl h-auto self-center lg:w-6/12 w-72 lg:p-8 p-6 lg:-mr-16 -mr-0 lg:-mt-0 -mt-6">
+            <img class="lg:w-4/12 w-full self-center" src="arch.png" alt="">
+            <div class="darkgray rounded shadow-2xl h-auto self-center lg:w-6/12 w-10/12 lg:p-8 p-6 lg:-mr-16 -mr-0 lg:-mt-0 -mt-6">
                 <h1 class="text-white text-3xl">
                     تصاميم معمارية
                 </h1>
@@ -21,8 +21,8 @@
         </div>
 
         <div class="flex flex-wrap justify-center">
-            <img class="lg:w-4/12 w-full" src="pickcolors.png" alt="">
-            <div class="darkgray rounded shadow-2xl h-auto self-center lg:w-6/12 w-72 lg:p-8 p-6 lg:-mr-16 -mr-0 lg:-mt-0 -mt-6">
+            <img class="lg:w-4/12 w-full self-center" src="pickcolors.png" alt="">
+            <div class="darkgray rounded shadow-2xl h-auto self-center lg:w-6/12 w-10/12 lg:p-8 p-6 lg:-mr-16 -mr-0 lg:-mt-0 -mt-6">
                 <h1 class="text-white text-3xl">
                     أختار الوانك وأنت بمكانك </h1>
                 <p class="mt-6 text-white leading-relaxed text-lg">تعتبر هذه الخدمة الاولى في العراق وطرحت من خلال شركتنا مجاناً لخدمة الزبائن
@@ -35,8 +35,8 @@
         </div>
 
         <div class="flex flex-wrap justify-center">
-            <img class="lg:w-4/12 w-full" src="training.png" alt="">
-            <div class="darkgray rounded shadow-2xl h-auto self-center lg:w-6/12 w-72 lg:p-8 p-6 lg:-mr-16 -mr-0 lg:-mt-0 -mt-6">
+            <img class="lg:w-4/12 w-full self-center" src="training.png" alt="">
+            <div class="darkgray rounded shadow-2xl h-auto self-center lg:w-6/12 w-10/12 lg:p-8 p-6 lg:-mr-16 -mr-0 lg:-mt-0 -mt-6">
                 <h1 class="text-white text-3xl">
                     التدريب والتطوير </h1>
                 <p class="mt-6 text-white leading-relaxed text-lg">

@@ -11,6 +11,10 @@
     <link href="css/app.css" rel="stylesheet">
     <title>Blu</title>
     <style>
+        /*img {*/
+        /*    align-self: flex-start;*/
+        /*}*/
+
         body {
             font-family: 'Cairo', sans-serif;
         }
