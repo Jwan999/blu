@@ -1,4 +1,4 @@
-<div id="whoarewe" class="flex justify-between flex-wrap w-full lg:-mt-0 -mt-10">
+<div id="whoarewe" class="flex justify-between flex-wrap w-full">
 
     <div class="flex flex-col lg:w-6/12 w-full self-center lg:mt-0 mt-10">
         <h1 class="lg:text-6xl text-5xl">
