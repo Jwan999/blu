@@ -17,12 +17,10 @@
 
         .bg {
             background-image: url("/bg.png");
-        }
-
-        .mobile-bg {
-            background-image: url("/mobilebg.png");
+            background-position: center;
 
         }
+
 
         .footerbg {
             background-image: url("/footer.png");
@@ -39,38 +37,43 @@
     </style>
 </head>
 <body dir="rtl" class="bg-gray-100">
+<div id="app">
+    <div class="w-full">
+        @include('components .navbar')
+    </div>
 
-<div class="sticky w-full">
-    @include('components .navbar')
-</div>
+    <div class="w-full w-auto h-screen bg bg-cover bg-no-repeat">
+        {{--    welcoming--}}
+        @include('components .welcoming')
 
-<div class="lg:w-full lg:flex hidden w-auto h-screen bg lg:bg-cover bg-no-repeat">
-    {{--welcoming--}}
-    @include('components .welcoming')
+    </div>
 
-</div>
+    <div class="lg:p-16 p-6">
+        @include('components .whoarewe')
+        @include('components .products')
+        @include('components .agencies')
+        @include('components .services')
 
-<div class="lg:w-full w-auto h-screen lg:hidden flex mobile-bg lg:bg-contain bg-no-repeat">
-    {{--welcoming--}}
-    @include('components .welcoming')
+        @include('components .reviews')
+        @include('components .contact')
 
-</div>
+    </div>
+    {{--footer--}}
+    <div class="h-96 w-full footerbg bg-no-repeat bg-cover">
 
-<div class="lg:p-16 p-6">
-    @include('components .whoarewe')
-    @include('components .products')
-    @include('components .agencies')
-    @include('components .services')
-
-    @include('components .reviews')
-    @include('components .contact')
-
-</div>
-{{--footer--}}
-<div class="h-96 w-full footerbg bg-no-repeat bg-cover">
+    </div>
 
 </div>
 
 {{--@include('components.navbar')--}}
+<script src="js/app.js"></script>
+<script>
+    let vue = new Vue({
+        el: '#app',
+        data: {
+            isOpen: false
+        },
+    })
+</script>
 </body>
 </html>

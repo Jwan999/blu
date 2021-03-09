@@ -1,66 +1,64 @@
-<header class="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:justify-between lg:py-3 py-2">
-
-    <div class="flex-1 lg:flex-none md:flex-none flex justify-between items-center">
-        <a class="lg:w-1/12 w-2/12" href="#">
-            <img src="blu.png" alt="">
-        </a>
-        <h1 class="w-10/12 ms-10 lg:text-2xl text-xl items-center self-center">
-            بلو للأصباغ الايطالية
-        </h1>
+<header class="bg-white sm:flex sm:justify-between sm:items-center sm:px-16 sm:py-6">
+    <div class="flex items-center justify-between px-4 py-3 sm:p-0">
+        <div class="flex">
+            <img class="h-8" src="blu.png" alt="Blu">
+            <h1 class="text-2xl mr-4">
+                بلو للأصباغ الايطالية
+            </h1>
+        </div>
+        <div class="sm:hidden">
+            <button @click="isOpen = !isOpen" type="button"
+                    class="block text-gray-500 focus:outline-none">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                    <path v-if="isOpen" fill-rule="evenodd"
+                          d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"/>
+                    <path v-if="!isOpen" fill-rule="evenodd"
+                          d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                </svg>
+            </button>
+        </div>
     </div>
-
-    <label for="menu-toggle" class="pointer-cursor lg:hidden block">
-
-        <svg  class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-             viewBox="0 0 20 20">
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-        </svg>
-
-    </label>
-
-    <input class="hidden" type="checkbox" id="menu-toggle"/>
-    <div class="hidden lg:flex lg:items-center lg:justify-between lg:w-auto md:w-full sm:w-full w-full" id="menu">
+    <nav :class="isOpen ? 'block' : 'hidden'" class="px-2 pb-4 sm:flex sm:p-0">
 
         <scrollactive active-class="active"
-                      class="lg:flex items-center justify-between text-lg text-gray-700 pt-4"
+                      class="lg:flex items-center justify-between text-lg text-gray-700"
                       :offset="100" :duration="800"
                       bezier-easing-value=".5,0,.35,1">
 
-            {{--            <a href="#vision"--}}
-            {{--               class="scrollactive-itemscrollactive-item  lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-yellow-300">--}}
-            {{--                الرؤية--}}
-            {{--            </a>--}}
-
-            <a href="#goals"
-               class="scrollactive-item lg:p-4 py-3 px-0 block border-b-4 transition duration-300 ease-in-out transform hover:scale-110 border-transparent hover:border-yellow-300">
+            <a href="#whoarewe"
+               class="scrollactive-item block px-3 py-2 font-semibold rounded hover:text-gray-100 hover:bg-gray-800 transition duration-300 ease-in-out transform hover:scale-110 border-transparent">
                 من نحن
+
             </a>
 
-            <a href="#stages"
-               class="scrollactive-item lg:p-4 py-3 px-0 block border-b-4 transition duration-300 ease-in-out transform hover:scale-110 border-transparent hover:border-yellow-300">
-                منتجاتنا </a>
+            <a href="#products"
+               class="scrollactive-item block px-3 py-2 font-semibold rounded hover:text-gray-100 hover:bg-gray-800 transition duration-300 ease-in-out transform hover:scale-110 border-transparent">
+                منتجاتنا
+            </a>
 
-            <a href="#participation"
-               class="scrollactive-item lg:p-4 py-3 px-0 block border-b-4 transition duration-300 ease-in-out transform hover:scale-110 border-transparent hover:border-yellow-300">
-                خدماتنا </a>
-
-            <a href="#organizers"
-               class="scrollactive-item lg:p-4 py-3 px-0 block border-b-4 transition duration-300 ease-in-out transform hover:scale-110 border-transparent hover:border-yellow-300">
+            <a href="#agencies"
+               class="scrollactive-item block px-3 py-2 font-semibold rounded hover:text-gray-100 hover:bg-gray-800 transition duration-300 ease-in-out transform hover:scale-110 border-transparent">
                 وكالاتنا
             </a>
 
+            <a href="#services"
+               class="scrollactive-item block px-3 py-2 font-semibold rounded hover:text-gray-100 hover:bg-gray-800 transition duration-300 ease-in-out transform hover:scale-110 border-transparent">
+                خدماتنا
+
+            </a>
+
+
+            <a href="#reviews"
+               class="scrollactive-item block px-3 py-2 font-semibold rounded hover:text-gray-100 hover:bg-gray-800 transition duration-300 ease-in-out transform hover:scale-110 border-transparent">
+                اراء الزبائن
+            </a>
+
             <a href="#contact"
-               class="scrollactive-item lg:p-4 py-3 px-0 block border-b-4 transition duration-300 ease-in-out transform hover:scale-110 border-transparent hover:border-yellow-300">
-                اراء الزبائن </a>
-
-            <a href="#partners"
-               class="scrollactive-item lg:p-4 py-3 px-0 block border-b-4 transition duration-300 ease-in-out transform hover:scale-110 border-transparent hover:border-yellow-300">
-                تواصل معنا </a>
-
+               class="scrollactive-item block px-3 py-2 font-semibold rounded hover:text-gray-100 hover:bg-gray-800 transition duration-300 ease-in-out transform hover:scale-110 border-transparent">
+                تواصل معنا
+            </a>
 
         </scrollactive>
 
-
-    </div>
-
+    </nav>
 </header>
